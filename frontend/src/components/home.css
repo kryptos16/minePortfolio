@@ -1,0 +1,88 @@
+    /* Home Section Container */
+.home-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Animated Welcome Text */
+  .welcome-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00c6ff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Home Content - About Me & Profile */
+  .home-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+  }
+  
+  /* Text Section */
+  .text-section {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .home-heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .highlight {
+    color: #00c6ff;
+  }
+  
+  .home-description {
+    font-size: 1.2rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+  
+  /* Profile Image */
+  .image-section {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 4px solid #00c6ff;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 198, 255, 0.6);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
